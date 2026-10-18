@@ -1,0 +1,257 @@
+{
+  "snapshot_date": "2026-10-17",
+  "source_files": [
+    {
+      "release_path": "RSMTA-MI/sta.py",
+      "workspace_source": "RSMTA/RSMTA-MI/sta.py",
+      "source_bytes": 23367,
+      "source_sha256": "bb86e3cd8f8e4096048fc37e4b47fe247968cb6d9cad95abf60b55ad67f618fc",
+      "release_bytes": 23367,
+      "release_sha256": "bb86e3cd8f8e4096048fc37e4b47fe247968cb6d9cad95abf60b55ad67f618fc",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-MI/run_sta_net.py",
+      "workspace_source": "RSMTA/RSMTA-MI/run_sta_net.py",
+      "source_bytes": 41056,
+      "source_sha256": "14f0f2f966c63566f6a05426063a5886b0a5026e54609f9f108e9191d0df26e5",
+      "release_bytes": 41056,
+      "release_sha256": "14f0f2f966c63566f6a05426063a5886b0a5026e54609f9f108e9191d0df26e5",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-MI/preprocessing/load_mat.py",
+      "workspace_source": "RSMTA/STA-Net-main-MIdataset/preprocessing/load_mat.py",
+      "source_bytes": 12664,
+      "source_sha256": "c6272888fd35f1d51ad7c2ebd2f17a6d6b64b22ddbfdd76733ca5bd42ffceb4d",
+      "release_bytes": 12664,
+      "release_sha256": "c6272888fd35f1d51ad7c2ebd2f17a6d6b64b22ddbfdd76733ca5bd42ffceb4d",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-MI/preprocessing/preprocessing.py",
+      "workspace_source": "RSMTA/STA-Net-main-MIdataset/preprocessing/preprocessing.py",
+      "source_bytes": 18091,
+      "source_sha256": "fe1ce2183d031d00927befc1cd77d708ea465021a2c4bcb33e2d420268dc40ed",
+      "release_bytes": 16841,
+      "release_sha256": "692d80c9973e58e3e4ffd88cf8ecae0d89def5230ffe3731d430f52089697f9a",
+      "copy_mode": "syntax-repair: correct line 428 and remove obsolete duplicate lines 429-472"
+    },
+    {
+      "release_path": "RSMTA-MI/preprocessing/epoch.py",
+      "workspace_source": "RSMTA/STA-Net-main-MIdataset/preprocessing/epoch.py",
+      "source_bytes": 11647,
+      "source_sha256": "49d1dff16c6a086e344e1d285116110babe6af5d54ce50d508902a4647beb9ea",
+      "release_bytes": 11647,
+      "release_sha256": "49d1dff16c6a086e344e1d285116110babe6af5d54ce50d508902a4647beb9ea",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-MI/preprocessing/to3d.py",
+      "workspace_source": "RSMTA/STA-Net-main-MIdataset/preprocessing/to3d.py",
+      "source_bytes": 14503,
+      "source_sha256": "5800683c142da5e2340b13988a3e3f33cede5be8cddccb2784ec1f3991818229",
+      "release_bytes": 14503,
+      "release_sha256": "5800683c142da5e2340b13988a3e3f33cede5be8cddccb2784ec1f3991818229",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-MI/preprocessing/window.py",
+      "workspace_source": "RSMTA/STA-Net-main-MIdataset/preprocessing/window.py",
+      "source_bytes": 9909,
+      "source_sha256": "397f58200cc972b58c50287d8055fb31716f1e816af2b42cda1b62590eae8172",
+      "release_bytes": 9909,
+      "release_sha256": "397f58200cc972b58c50287d8055fb31716f1e816af2b42cda1b62590eae8172",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-MI/preprocessing/model_input.py",
+      "workspace_source": "RSMTA/STA-Net-main-MIdataset/preprocessing/model_input.py",
+      "source_bytes": 11268,
+      "source_sha256": "5d947ae9d92b3c173b02b3d2417488762ea443da7aca88504f3e8489fbcf3359",
+      "release_bytes": 11268,
+      "release_sha256": "5d947ae9d92b3c173b02b3d2417488762ea443da7aca88504f3e8489fbcf3359",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-MI/preprocessing/requirements.original.txt",
+      "workspace_source": "RSMTA/STA-Net-main-MIdataset/requirements.txt",
+      "source_bytes": 207,
+      "source_sha256": "273bacd5f53773c7b0f780c0782932506733bf064a4d0ab2226d229cb63e3592",
+      "release_bytes": 207,
+      "release_sha256": "273bacd5f53773c7b0f780c0782932506733bf064a4d0ab2226d229cb63e3592",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-MA/sta.py",
+      "workspace_source": "RSMTA/RSMTA-MA/sta.py",
+      "source_bytes": 23440,
+      "source_sha256": "0a67dac92f518e1847c0a0e9ff6b2c9d32c85f576571c2a6d3bf1abfbf3746a2",
+      "release_bytes": 23440,
+      "release_sha256": "0a67dac92f518e1847c0a0e9ff6b2c9d32c85f576571c2a6d3bf1abfbf3746a2",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-MA/run_sta_net.py",
+      "workspace_source": "RSMTA/RSMTA-MA/run_sta_net.py",
+      "source_bytes": 22671,
+      "source_sha256": "77aceca13c092766dec2b99d705939a0ab483c0a4403dcbf0959cc58773cd121",
+      "release_bytes": 22671,
+      "release_sha256": "77aceca13c092766dec2b99d705939a0ab483c0a4403dcbf0959cc58773cd121",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-MA/preprocessing/load_mat.py",
+      "workspace_source": "RSMTA/STA-Net-main-MAdataset/preprocessing/load_mat.py",
+      "source_bytes": 12664,
+      "source_sha256": "cc2ae1e3c2a45b55c39ef21bfe2f204376c7b3be43a0692dfb872b8430d837eb",
+      "release_bytes": 12664,
+      "release_sha256": "cc2ae1e3c2a45b55c39ef21bfe2f204376c7b3be43a0692dfb872b8430d837eb",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-MA/preprocessing/preprocessing.py",
+      "workspace_source": "RSMTA/STA-Net-main-MAdataset/preprocessing/preprocessing.py",
+      "source_bytes": 16842,
+      "source_sha256": "ad17b16186eaf20fda655ad9b6f477029b041d03f8e9f693f4723efefaec4dd0",
+      "release_bytes": 16842,
+      "release_sha256": "ad17b16186eaf20fda655ad9b6f477029b041d03f8e9f693f4723efefaec4dd0",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-MA/preprocessing/epoch.py",
+      "workspace_source": "RSMTA/STA-Net-main-MAdataset/preprocessing/epoch.py",
+      "source_bytes": 11647,
+      "source_sha256": "27913754add6921207601f53cadab6b961758bc16ac79f9a82bca26f099dbc7d",
+      "release_bytes": 11647,
+      "release_sha256": "27913754add6921207601f53cadab6b961758bc16ac79f9a82bca26f099dbc7d",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-MA/preprocessing/to3d.py",
+      "workspace_source": "RSMTA/STA-Net-main-MAdataset/preprocessing/to3d.py",
+      "source_bytes": 14503,
+      "source_sha256": "25f1b11ea7f0b9fee2e003c731ca19bcf1daa9c616cc68998321e424bfd7d897",
+      "release_bytes": 14503,
+      "release_sha256": "25f1b11ea7f0b9fee2e003c731ca19bcf1daa9c616cc68998321e424bfd7d897",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-MA/preprocessing/window.py",
+      "workspace_source": "RSMTA/STA-Net-main-MAdataset/preprocessing/window.py",
+      "source_bytes": 9909,
+      "source_sha256": "fda96eec43143d4854b30cc9ad3f59e66d54df439bed7e3b45b261965731bf92",
+      "release_bytes": 9909,
+      "release_sha256": "fda96eec43143d4854b30cc9ad3f59e66d54df439bed7e3b45b261965731bf92",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-MA/preprocessing/model_input.py",
+      "workspace_source": "RSMTA/STA-Net-main-MAdataset/preprocessing/model_input.py",
+      "source_bytes": 11268,
+      "source_sha256": "aaef30d0b7d4fc08a9095a18b9b336eb0c780fc96337e5504dd40064edb0e958",
+      "release_bytes": 11268,
+      "release_sha256": "aaef30d0b7d4fc08a9095a18b9b336eb0c780fc96337e5504dd40064edb0e958",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-MA/preprocessing/requirements.original.txt",
+      "workspace_source": "RSMTA/STA-Net-main-MAdataset/requirements.txt",
+      "source_bytes": 207,
+      "source_sha256": "273bacd5f53773c7b0f780c0782932506733bf064a4d0ab2226d229cb63e3592",
+      "release_bytes": 207,
+      "release_sha256": "273bacd5f53773c7b0f780c0782932506733bf064a4d0ab2226d229cb63e3592",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-WG/sta.py",
+      "workspace_source": "RSMTA/RSMTA-WG/sta.py",
+      "source_bytes": 22841,
+      "source_sha256": "3325f427c60af76e51830b056f5880c9d51d0033bc42a0de3db5bf662a94578f",
+      "release_bytes": 22841,
+      "release_sha256": "3325f427c60af76e51830b056f5880c9d51d0033bc42a0de3db5bf662a94578f",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-WG/run_sta_net.py",
+      "workspace_source": "RSMTA/RSMTA-WG/run_sta_net.py",
+      "source_bytes": 9485,
+      "source_sha256": "f79d8e7e2422d1301cad7b665226fd8e013c308f129ff334f9f3820c5af38263",
+      "release_bytes": 9485,
+      "release_sha256": "f79d8e7e2422d1301cad7b665226fd8e013c308f129ff334f9f3820c5af38263",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-WG/preprocessing/load_mat.py",
+      "workspace_source": "RSMTA/STA-Net-main-WGdataset/preprocessing/load_mat.py",
+      "source_bytes": 3862,
+      "source_sha256": "7515dbb8adca7f36e896ad3bb5b4a309d866d1cc6e52e757c34be3f80a29f5e3",
+      "release_bytes": 3862,
+      "release_sha256": "7515dbb8adca7f36e896ad3bb5b4a309d866d1cc6e52e757c34be3f80a29f5e3",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-WG/preprocessing/preprocessing.py",
+      "workspace_source": "RSMTA/STA-Net-main-WGdataset/preprocessing/preprocessing.py",
+      "source_bytes": 3941,
+      "source_sha256": "1ec37ca7c8f915d39064b3cac57978645c1582725e98c3cb75e662c505b18eed",
+      "release_bytes": 3941,
+      "release_sha256": "1ec37ca7c8f915d39064b3cac57978645c1582725e98c3cb75e662c505b18eed",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-WG/preprocessing/epoch.py",
+      "workspace_source": "RSMTA/STA-Net-main-WGdataset/preprocessing/epoch.py",
+      "source_bytes": 2881,
+      "source_sha256": "57a62c6276e91d2ee88a002bb4d9645456d85ed7ef26160f415ec57320b0954d",
+      "release_bytes": 2881,
+      "release_sha256": "57a62c6276e91d2ee88a002bb4d9645456d85ed7ef26160f415ec57320b0954d",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-WG/preprocessing/to3d.py",
+      "workspace_source": "RSMTA/STA-Net-main-WGdataset/preprocessing/to3d.py",
+      "source_bytes": 7640,
+      "source_sha256": "92c8bf2e7201fe0f93ca34156f50473fdced169f9eeac3830e172de5ca26a6a1",
+      "release_bytes": 7640,
+      "release_sha256": "92c8bf2e7201fe0f93ca34156f50473fdced169f9eeac3830e172de5ca26a6a1",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-WG/preprocessing/window.py",
+      "workspace_source": "RSMTA/STA-Net-main-WGdataset/preprocessing/window.py",
+      "source_bytes": 2005,
+      "source_sha256": "2e7ba681d8753cd968147a2d2afc10d93ff2edbfd51f5123ddd94574983e0248",
+      "release_bytes": 2005,
+      "release_sha256": "2e7ba681d8753cd968147a2d2afc10d93ff2edbfd51f5123ddd94574983e0248",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-WG/preprocessing/model_input.py",
+      "workspace_source": "RSMTA/STA-Net-main-WGdataset/preprocessing/model_input.py",
+      "source_bytes": 1732,
+      "source_sha256": "edf232a849a562d1e5b97d1ccf89a57f35bffb39a2d931f0fdd34fbdad4a1b24",
+      "release_bytes": 1732,
+      "release_sha256": "edf232a849a562d1e5b97d1ccf89a57f35bffb39a2d931f0fdd34fbdad4a1b24",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-WG/preprocessing/requirements.original.txt",
+      "workspace_source": "RSMTA/STA-Net-main-WGdataset/requirements.txt",
+      "source_bytes": 194,
+      "source_sha256": "98eaa4ee5c8e0a2523f666aeebea8c222784d41a4da69d708955db291eab52de",
+      "release_bytes": 194,
+      "release_sha256": "98eaa4ee5c8e0a2523f666aeebea8c222784d41a4da69d708955db291eab52de",
+      "copy_mode": "byte-identical"
+    },
+    {
+      "release_path": "RSMTA-MI/run_time_window_accuracy.py",
+      "workspace_source": "RSMTA/RSMTA-MI/run_time_window_accuracy.py",
+      "source_bytes": 17680,
+      "source_sha256": "36f34c866dcfa407f239ebf64af499828fdd8e4f75b4b3df15b73d8c8c3c1493",
+      "release_bytes": 17680,
+      "release_sha256": "36f34c866dcfa407f239ebf64af499828fdd8e4f75b4b3df15b73d8c8c3c1493",
+      "copy_mode": "byte-identical"
+    }
+  ]
+}

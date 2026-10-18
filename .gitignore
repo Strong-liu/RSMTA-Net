@@ -1,0 +1,55 @@
+# Python and environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.idea/
+.vscode/
+
+# Local credentials and machine configuration
+.env
+.env.*
+*.pem
+*.key
+
+# Recordings and generated tensors
+*.mat
+*.npy
+*.npz
+*.edf
+*.bdf
+*.fif
+*.snirf
+data/
+DataSet/
+Datasets/
+mat2array/
+preprocessed/
+epoch/
+d3/
+window/
+model_input/
+
+# Trained weights and experiment outputs
+*.h5
+*.hdf5
+*.keras
+*.ckpt*
+*.index
+*.data-?????-of-?????
+*.pt
+*.pth
+*.onnx
+*.csv
+*.log
+*.png
+*.jpg
+*.pdf
+*.docx
+*.zip
+results*/
+Results*/
+ConfusionMatrices*/
+checkpoints/
+logs/
