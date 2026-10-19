@@ -481,10 +481,10 @@ class prediction_weight_layer(keras.layers.Layer):
 
         return the_prediction
 
-class RFB(keras.layers.Layer):
+class SRFB(keras.layers.Layer):
 
     def __init__(self, out_channels, **kwargs):
-        super(RFB, self).__init__(**kwargs)
+        super(SRFB, self).__init__(**kwargs)
 
         # 分支1
         self.b1_c1 = layers.Conv3D(filters=out_channels, kernel_size=1, strides=1, padding='valid')
@@ -603,9 +603,9 @@ def sta_net():
         padding='same'
     )((eeg_input, eeg_input, fnirs_input))
 
-    # 将 RFB 模块放至第一次下采样 (stride) 之后，大幅度减少多分支的大张量运算，并且作用于Fusion这条线的同时，EEG的维度也要进行匹配，方便下一次fga
-    eeg1 = RFB(out_channels=16)(eeg1)
-    eegfusion1 = RFB(out_channels=16)(eegfusion1)
+    # 将 SRFB 模块放至第一次下采样 (stride) 之后，大幅度减少多分支的大张量运算，并且作用于Fusion这条线的同时，EEG的维度也要进行匹配，方便下一次fga
+    eeg1 = SRFB(out_channels=16)(eeg1)
+    eegfusion1 = SRFB(out_channels=16)(eegfusion1)
 
 
     eegfusion1 = layers.Dropout(0.5)(eegfusion1)
@@ -627,8 +627,8 @@ def sta_net():
         padding='same'
     )((eegfusion1, eeg1, fnirs1))
 
-    # 第二次RFB
-    # eegfusion2 = RFB(out_channels=32)(eegfusion2)
+    # 第二次SRFB
+    # eegfusion2 = SRFB(out_channels=32)(eegfusion2)
 
     eegfusion2 = gap()(eegfusion2)
     eeg2 = gap()(eeg2)
