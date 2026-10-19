@@ -91,7 +91,7 @@ The MI/MA dataset contains 29 participants; the WG dataset contains 26. MI and M
 
 ### Model input
 
-The training scripts expect one `.npz` file per participant under a task's `model_input` directory.
+**The required input format is NumPy `.npz`.** Each participant requires one `.npz` file under the task's `model_input/` directory; the training scripts only load files with the `.npz` extension.
 
 | Key | Shape | Meaning |
 | --- | --- | --- |
@@ -103,6 +103,8 @@ The training scripts expect one `.npz` file per participant under a task's `mode
 MI/MA input files also retain trial-level session metadata. The WG training script uses the original ordering of 600 windows: three consecutive sessions of 200 windows each. Each trial contributes ten EEG windows. The training scripts multiply the stored fNIRS input by `1e3`; do not apply this scaling a second time to an already scaled input.
 
 ## Train and evaluate
+
+Before running, make sure each task's `model_input/` directory contains the participant-level `.npz` files described above.
 
 Run from the chosen task directory so that `from sta import sta_net` resolves to that task's model:
 
@@ -141,4 +143,6 @@ The RSMTA-Net manuscript title is provided above; a final publication DOI is not
 
 ## Data preprocessing
 
-This repository distributes the model and training code only. The data-preprocessing scripts are not included. If you need them, please contact the author by email at [250854042021@lyu.edu.cn](mailto:250854042021@lyu.edu.cn).
+The data-preprocessing scripts are not included in this repository. If you need them, please contact the author.
+
+**Author email:** [250854042021@lyu.edu.cn](mailto:250854042021@lyu.edu.cn)
