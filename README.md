@@ -4,9 +4,52 @@ TensorFlow implementation of **RSMTA-Net: A Receptive-Field Spatial Modeling and
 
 RSMTA-Net combines spatial receptive-field modeling with state-space enhancement of fNIRS candidate features before EEG-guided temporal attention. This repository contains separate implementations for motor imagery (MI), mental arithmetic (MA), and word generation (WG).
 
+## Model architecture
+
+<p align="center">
+  <img src="figures/rsmta-net-framework.png" alt="Framework of RSMTA-Net" width="100%">
+</p>
+
+<p align="center"><sub><b>Figure 1.</b> Framework of RSMTA-Net. EEG and fNIRS are encoded by parallel 3D convolutional streams. SRFB strengthens the intermediate spatial representations, and SSE-EGTA refines the ordered fNIRS delay tokens before EEG-guided temporal alignment.</sub></p>
+
+RSMTA-Net takes an EEG tensor `X_EEG ∈ R^(16×16×600)`, eleven fNIRS delay candidates `X_fNIRS ∈ R^(11×16×16×30×2)`, and a Fusion branch derived from both modalities. FGSA uses fNIRS-derived spatial attention to guide the Fusion representation at two extraction depths, while SRFB enlarges the spatial receptive field of the EEG and Fusion features between them. The pooled fNIRS sequence is then refined by Fusion-conditioned state-space enhancement and aligned with the Fusion query through multi-head cross-attention (SSE-EGTA). The final prediction combines the Fusion and fNIRS outputs; the EEG output is retained as an auxiliary prediction.
+
+### SRFB: multi-scale spatial receptive-field block
+
+<p align="center">
+  <img src="figures/srfb-module.png" alt="Framework of SRFB" width="62%">
+</p>
+
+<p align="center"><sub><b>Figure 2.</b> Framework of SRFB. Three parallel branches use dilation rates (1,1,1), (3,3,1), and (5,5,1); a residual path preserves the input.</sub></p>
+
+SRFB processes the intermediate EEG and Fusion features before the second FGSA stage. The three branches capture local, medium-range, and broad spatial dependencies, and `T-Interleave + 1×1×3 conv` fuses them with the residual input. Dilation is applied only along the two spatial axes.
+
+<p align="center">
+  <img src="figures/srfb-receptive-fields.png" alt="SRFB receptive fields" width="58%">
+</p>
+
+<p align="center"><sub><b>Figure 3.</b> Receptive-field coverage of the three SRFB branches and their multi-scale fusion. The scalp map is illustrative; colors do not represent measured cortical activation.</sub></p>
+
+### SSE-EGTA: state-space enhancement and temporal alignment
+
+<p align="center">
+  <img src="figures/sse-egta.png" alt="Framework of SSE-EGTA" width="82%">
+</p>
+
+<p align="center"><sub><b>Figure 4.</b> Framework of SSE-EGTA. Fusion-conditioned SSE refines the ordered fNIRS tokens into enhanced keys and values for EGTA cross-attention.</sub></p>
+
+The eleven fNIRS candidates are flattened and augmented with positional encodings. Fusion-conditioned gates update the state along the delay sequence, and a learnable residual fusion combines the state-space context with the original tokens. EGTA then uses the Fusion representation as the query to select delayed fNIRS information.
+
+<p align="center">
+  <img src="figures/sse-state-space.png" alt="State-space enhancement in SSE-EGTA" width="82%">
+</p>
+
+<p align="center"><sub><b>Figure 5.</b> State-space enhancement within SSE-EGTA. Fusion-conditioned update, input, and output gates control state retention and updating; residual fusion combines the resulting context with the original tokens.</sub></p>
+
 ## Repository structure
 
 ```text
+figures/                        Architecture and receptive-field figures used in this README
 RSMTA-MI/
   sta.py                         Model definition; factory: sta_net()
   run_sta_net.py                 MI training and evaluation

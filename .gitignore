@@ -53,3 +53,7 @@ Results*/
 ConfusionMatrices*/
 checkpoints/
 logs/
+
+# README architecture figures (explicitly tracked)
+!figures/
+!figures/*.png
