@@ -55,14 +55,5 @@
       "release_sha256": "f79d8e7e2422d1301cad7b665226fd8e013c308f129ff334f9f3820c5af38263",
       "copy_mode": "byte-identical"
     },
-    {
-      "release_path": "RSMTA-MI/run_time_window_accuracy.py",
-      "workspace_source": "RSMTA/RSMTA-MI/run_time_window_accuracy.py",
-      "source_bytes": 17680,
-      "source_sha256": "36f34c866dcfa407f239ebf64af499828fdd8e4f75b4b3df15b73d8c8c3c1493",
-      "release_bytes": 17680,
-      "release_sha256": "36f34c866dcfa407f239ebf64af499828fdd8e4f75b4b3df15b73d8c8c3c1493",
-      "copy_mode": "byte-identical"
-    }
   ]
 }
