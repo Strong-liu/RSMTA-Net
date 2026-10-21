@@ -7,7 +7,6 @@ This snapshot contains the author-supplied RSMTA-Net implementations for MI, MA,
 | `RSMTA-MI/sta.py`, `RSMTA-MI/run_sta_net.py` | `RSMTA/RSMTA-MI/` |
 | `RSMTA-MA/sta.py`, `RSMTA-MA/run_sta_net.py` | `RSMTA/RSMTA-MA/` |
 | `RSMTA-WG/sta.py`, `RSMTA-WG/run_sta_net.py` | `RSMTA/RSMTA-WG/` |
-| `RSMTA-MI/run_time_window_accuracy.py` | `RSMTA/RSMTA-MI/` |
 
 `SOURCE_MANIFEST.json` records the exact source path and both original and release SHA-256 checksums for each copied source or dependency file. The root README, dependency lists, ignore rules, and this notice were added for this release.
 
